@@ -8,23 +8,24 @@
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
     <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-5YrzWRhu.js">
     <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CuJmbQAW.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Chcrb7xm.css">
   </head>
   <body>
-    <form id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
+    <form class="form">
+      <label>
+        <input
+          type="text"
+          name="search-text"
+          placeholder="Search images..."
+          required
+        />
+      </label>
       <button type="submit">Search</button>
     </form>
 
-    <div class="gallery"></div>
+    <span class="loader hidden"></span>
 
-    <button class="load-more is-hidden">Load more</button>
-    <span class="loader is-hidden">Loading...</span>
+    <ul class="gallery"></ul>
 
   </body>
 </html>
