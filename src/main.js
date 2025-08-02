@@ -11,6 +11,7 @@ import {
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+
 const form = document.querySelector('#search-form');
 const loadMoreBtn = document.querySelector('.load-more');
 
@@ -58,7 +59,7 @@ form.addEventListener('submit', async e => {
     hideLoader();
   }
 });
-
+   
 loadMoreBtn.addEventListener('click', async () => {
   currentPage += 1;
   showLoader();
